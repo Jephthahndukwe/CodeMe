@@ -190,9 +190,10 @@ form {
 
 /* hides scrollbar */
  .message::-webkit-scrollbar {
-  display: none;
+   display: none;
+  }
+  textarea {
+    resize: none;
+    overflow-y: none;
 }
-textarea {
-  resize: none;
-  overflow-y: none;
-}
+
