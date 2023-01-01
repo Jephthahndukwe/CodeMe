@@ -36,6 +36,7 @@
   align-items: center;
   transition: ease 0.25s all;
   font-size: 14px;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
