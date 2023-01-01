@@ -16,8 +16,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = 5000
-
 app.get('/', async (req, res) => {
     res.status(200).send({
         message: 'Hello From CodeMe',
@@ -46,6 +44,6 @@ app.post('/', async (req, res) => {
     }
 })
 
-app.listen(port, () => {
-    console.log(`server is running on port http://localhost:${port}`)
+app.listen(5000, () => {
+    console.log('server is running on port http://localhost:5000')
 });
