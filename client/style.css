@@ -301,4 +301,7 @@ form {
   left: -12%;
   margin-left: 18%;
 }
+.chat {
+  padding-left: 0px;
+}
 }
