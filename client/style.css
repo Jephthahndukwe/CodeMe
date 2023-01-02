@@ -307,4 +307,7 @@ form {
 .chat {
   padding-left: 0px;
 }
+.message {
+  max-width: 100%;
+}
 }
