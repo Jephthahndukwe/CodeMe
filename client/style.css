@@ -34,7 +34,6 @@ body.dark {
 
 .sidemenu {
   width: 260px;
-  height: 100vh;
   padding: 10px;
   background-color: #202123;
 }
@@ -245,13 +244,7 @@ form {
   flex-direction: row;
   gap: 10px;
 }
-.chatbox p {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  font-size: 16px;
-}
+
 .chatbox span {
   text-decoration: underline;
 }
@@ -284,3 +277,28 @@ form {
     overflow-y: none;
 }
 
+
+
+@media screen and (max-width: 992px) {
+  .App {
+    display: contents !important;
+ }
+ 
+ .sidemenu {
+  width: 100% !important;
+   padding: 10px;
+   background-color: #202123;
+ }
+
+ .chat-input-textarea {
+  width: 90%;
+}
+
+button {
+  right: 12%;
+}
+form {
+  left: -12%;
+  margin-left: 18%;
+}
+}

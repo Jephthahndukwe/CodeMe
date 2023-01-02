@@ -8,6 +8,9 @@ document.querySelector('.mode').addEventListener
     document.body.classList.toggle('dark')
 })
 
+
+
+
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
