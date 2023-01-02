@@ -248,6 +248,7 @@ form {
 .chatbox span {
   text-decoration: underline;
 }
+
 .message {
   text-align: start;
   padding-left: 2%;
@@ -277,7 +278,7 @@ form {
     overflow-y: none;
 }
 
-
+/*-------- The Responsiveness ------------------------------------*/
 
 @media screen and (max-width: 992px) {
   .App {

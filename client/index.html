@@ -16,27 +16,33 @@
           <i class="fa fa-plus plus"></i> New Chat
         </div> -->
 
-        <div class="mode">
-          <div class="dark-mode">
-            <img src="assets/moon.png" id="moon">
-           <span> Dark mode</span>
-          </div>
-          <div class="light-mode">
-            <img src="assets/sun.png" id="sun">
-            <span>Light mode</span>
-          </div>
-        </div>
-      </aside>
-      <section  class='chatbox'>
-        <div id="chat_container">
+       <!-- Changing the Background Mode -> DARK/LIGHT MODE -->
+          <div class="mode">
+            <div class="dark-mode">
+              <img src="assets/moon.png" id="moon">
+            <span> Dark mode</span>
+            </div>
+            <div class="light-mode">
+              <img src="assets/sun.png" id="sun">
+              <span>Light mode</span>
+            </div>
+          </div>  
+        </aside>
 
-        </div>
+      <!-- THE CHATBOX AREA -->
+        <section  class='chatbox'>
+          <div id="chat_container">
+
+          </div>
+
+      <!-- The Textarea to chat ChatMe -->
         <form>
           <textarea name="prompt" rows="1" cols="1" class="chat-input-textarea"></textarea>
           <button type="submit"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="h-4 w-4 send" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg></button>
         </form>
       </section>
     </div>
+    
     <script type="module" src="script.js"></script>
   </body>
 </html>
