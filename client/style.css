@@ -7,24 +7,95 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+body {
+  --background-color: #343541;
+  --text-color: #fff;
+  --background-color2: #40414f;
+  --ai-background-color: #40414F;
+
+  
+  background-color: var(--background-color);
+  color: var(--text-color);
+ 
+}
+
 .App {
-  background-color: #282c34;
-  height: 100vh;
-  color: #fff;
-  text-align: center;
-  display: flex;
+   text-align: center;
+   display: flex;
+}
+
+body.dark {
+  --background-color: #fff;
+  --background-color2: #fff;
+  --ai-background-color: #f7f7f8;
+  --text-color: #000;
 }
 
 .sidemenu {
   width: 260px;
+  height: 100vh;
   padding: 10px;
   background-color: #202123;
+}
+
+.mode {
+  position: relative;
+  top: 90%;
+  bottom: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+}
+.light-mode span {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+.dark-mode span {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+.dark-mode,
+.light-mode {
+  position: absolute;
+}
+.light-mode {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+.dark .light-mode {
+  opacity: 0;
+}
+
+.dark-mode{
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+.dark .dark-mode {
+  opacity: 1;
+}
+
+.mode:hover {
+  padding: 19px;
+  background-color: #2b2c2f;
+  border-radius: 5px;
+}
+
+#moon {
+  width: 17px;
+  transform: rotate(-30deg);
+}
+#sun {
+  width: 17px;
 }
 
 .chatbox {
   flex: 1;
   position: relative;
-  background-color: #343541;
 }
 
 .side-menu-button {
@@ -45,17 +116,17 @@
   margin-top: -1.5%;
 }
 .side-menu-button:hover {
- background-color: rgb(255, 255, 255, 0.1);
+ background-color: #2b2c2f;
 }
 .chat-input-holder span {
   text-decoration: underline;
 }
 
 .chat-input-textarea {
-  background-color: #40414f;
+  background-color: var(--background-color2);
   width: 75%;
   padding: 15px;
-  color: white;
+  color: var(--text-color);
   font-size: 16px;
   border-radius: 5px;
   border: none;
@@ -115,7 +186,8 @@ form img {
 }
 
 .ai {
-  background: #40414F;
+  background: var(--ai-background-color);
+  border: 1px solid transparent;
 }
 
 
@@ -172,7 +244,7 @@ form {
 .message {
   text-align: start;
   padding-left: 2%;
-  color: #dcdcdc;
+  color: var(--text-color);
   font-size: 20px;
   width: 100%;
   overflow-x: scroll; 

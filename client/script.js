@@ -1,6 +1,13 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
+
+// Changing background color NIGHT/LIGHT MODE
+document.querySelector('.mode').addEventListener
+('click', () => {
+    document.body.classList.toggle('dark')
+})
+
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 

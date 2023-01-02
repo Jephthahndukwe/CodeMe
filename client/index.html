@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatMe - Your Coding AI</title>
+    <title>ChatMe - Your Personal AI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Normal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -12,8 +12,19 @@
   <body>
     <div id="app" class="App">
       <aside class='sidemenu'>
-        <div class='side-menu-button'>
+        <!-- <div class='side-menu-button'>
           <i class="fa fa-plus plus"></i> New Chat
+        </div> -->
+
+        <div class="mode">
+          <div class="dark-mode">
+            <img src="assets/moon.png" id="moon">
+           <span> Dark mode</span>
+          </div>
+          <div class="light-mode">
+            <img src="assets/sun.png" id="sun">
+            <span>Light mode</span>
+          </div>
         </div>
       </aside>
       <section  class='chatbox'>
