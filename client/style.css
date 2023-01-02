@@ -290,6 +290,9 @@ form {
    background-color: #202123;
  }
 
+ #chat_container {
+  height: 90vh;
+} 
  .chat-input-textarea {
   width: 90%;
 }
