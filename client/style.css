@@ -12,16 +12,11 @@ body {
   --text-color: #fff;
   --background-color2: #40414f;
   --ai-background-color: #40414F;
+  --button-background-color: #202123;
 
   
   background-color: var(--background-color);
   color: var(--text-color);
- 
-}
-
-.App {
-   text-align: center;
-   display: flex;
 }
 
 body.dark {
@@ -29,6 +24,12 @@ body.dark {
   --background-color2: #fff;
   --ai-background-color: #f7f7f8;
   --text-color: #000;
+  --button-background-color: #ececf1;
+}
+
+.App {
+   text-align: center;
+   display: flex;
 }
 
 .sidemenu {
@@ -139,8 +140,21 @@ button {
   border: 0;
   cursor: pointer;
   background: transparent;
-  position: relative;
-  left: -6%;
+  position: absolute;
+  top: 20%;
+  right: 27%;
+  padding: 0 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+.send {
+  transform: rotate(90deg);
+  color: #acacbe;
+}
+button:hover {
+  padding: 0 5px;
+  padding-top: 5px;
+  background-color: var(--button-background-color);
 }
 
 form img {
