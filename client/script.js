@@ -35,7 +35,7 @@ recognition.onresult = function (event) {
 function computerSpeech(words) {
     const speech = new SpeechSynthesisUtterance();
     speech.lang = "en-US";
-    speech.pitch = 0.9;
+    speech.pitch = 5;
     speech.volume = 1;
     speech.rate = 1;
 
@@ -43,11 +43,11 @@ function computerSpeech(words) {
 
     window.speechSynthesis.speak(speech)
 }
-
-
 btn.addEventListener("click", () => {
     recognition.start();
 })
+
+
 
 
 const form = document.querySelector('form')
