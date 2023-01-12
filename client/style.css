@@ -141,7 +141,7 @@ button {
   background: transparent;
   position: absolute;
   top: 20%;
-  right: 27%;
+  right: 25%;
   padding: 0 5px;
   padding-top: 5px;
   border-radius: 5px;
@@ -154,6 +154,12 @@ button:hover {
   padding: 0 5px;
   padding-top: 5px;
   background-color: var(--button-background-color);
+}
+.micro {
+  color: #acacbe;
+  font-size: 18px;
+  margin-top: 1.8%;
+  cursor: pointer;
 }
 
 form img {

@@ -10,6 +10,45 @@ document.querySelector('.mode').addEventListener
 
 
 
+// Speech Recognition Synthesis
+const btn = document.querySelector("#micro");
+
+const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+const recognition = new SpeechRecognition();
+
+recognition.onstart = function () {
+    console.log("Recognition has started!");
+};
+
+recognition.onresult = function (event) {
+    console.log(event)
+
+    const spokenwords =  event.results[0][0].transcript;
+
+    console.log(spokenwords);
+
+    computerSpeech(spokenwords);
+};
+
+function computerSpeech(words) {
+    const speech = new SpeechSynthesisUtterance();
+    speech.lang = "en-US";
+    speech.pitch = 0.9;
+    speech.volume = 1;
+    speech.rate = 1;
+
+    speech.text = words;
+
+    window.speechSynthesis.speak(speech)
+}
+
+
+btn.addEventListener("click", () => {
+    recognition.start();
+})
+
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
