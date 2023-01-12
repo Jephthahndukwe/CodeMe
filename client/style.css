@@ -317,4 +317,7 @@ form {
 .message {
   max-width: 60vw !important;
 }
+.micro {
+  margin-top: 3%;
+}
 }
