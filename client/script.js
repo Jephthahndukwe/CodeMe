@@ -39,10 +39,25 @@ function computerSpeech(words) {
     speech.volume = 1;
     speech.rate = 1;
 
-    speech.text = words;
+    // speech.text = words;
+
+    determineWords(speech, words);
 
     window.speechSynthesis.speak(speech)
 }
+
+function determineWords(speech, words) {
+    if (words.includes("hello")) {
+        speech.text = "Hi there! How can I help you?";
+    }
+    if (words.includes("how are you")) {
+        speech.text = " I'm doing well, thank you. How about you?";
+    }
+    if (words.includes("am good thank you")) {
+        speech.text = "That's great to hear!";
+    }
+}
+
 btn.addEventListener("click", () => {
     recognition.start();
 })
